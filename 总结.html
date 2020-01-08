@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  总结：
+   1.为什么用git
+    版本管理工具
+    能够更好的管理项目代码
+
+   2. git下载和安装
+
+   3. git的使用
+      1. 初始化： git init
+      2. 添加： git add
+        1. 文件名
+        2. .
+      3. 提交： git commit
+        -m '备注信息'
+        -a -m '备注信息'
+
+    4.git的分区
+      工作区
+      暂存区
+      版本区
+
+    5.设置git的贡献者名称和邮箱
+     git config --global user.name '名称'
+     git config --global user.email '邮箱'
+
+      git config --global --unset user.name '名称'
+     git config --global --unset user.email '邮箱'
+
+     查看： git config --list
+
+
+    6.查看工作区和暂存区的状态： git status
+
+
+    7.对比：
+     git diff : 工作区 和暂存区
+     git diff --cached(--staged) 暂存区和版本区
+     git diff master 工作区和版本区
+
+    8.撤销
+     git reset HEAD 文件名
+     git checkout -- 文件名
+     git commit --amend
+
+    9.删除
+      git rm 文件名
+      git rm -f
+      git rm --cached
+
+    10.恢复
+      git checkout commit id 文件名
+      git reset --hard commit id
+      git reset --hard HEAD^
+      git reset --hard HEAD~num
+
+    11.同步本地和远程仓库
+     git clone  将远程仓库克隆到本地
+     git remote 查看远程仓库名称
+     git push origin master 将代码同步到远程
+
+
+    12.git分支
+        git branch
+        git branch 分支名
+
+
+        git checkout 分支名
+
+        git merge 分支名
+
+
+
+</body>
+</html>
